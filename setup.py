@@ -24,7 +24,7 @@ setup(
     long_description="Use the adapter framework to run any large model.",
     author="Babs Technologies",
     author_email="",
-    url="https://github.com/Babs-Technologies/module",
+    url="https://github.com/Babs-Technologies/moduler",
     packages=find_packages(exclude=["tests"]),
     include_package_data=True,
     license="MIT",
