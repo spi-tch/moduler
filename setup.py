@@ -26,7 +26,7 @@ setup(
     author_email="",
     url="https://github.com/Babs-Technologies/moduler",
     packages=find_packages(exclude=["tests"]),
-    package_data={"hivemind": ["proto/*", "hivemind_cli/*"]},
+    package_data={"moduler": ["proto/*"]},
     include_package_data=True,
     license="MIT",
     setup_requires=["grpcio-tools", "mypy-protobuf"],
