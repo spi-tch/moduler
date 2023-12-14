@@ -1,0 +1,19 @@
+/* This is a commons file containing special proto messages for the
+ * server and client to communicate with each other.
+ */
+
+syntax = "proto3";
+
+message Tensor {
+  bytes buffer = 1;
+  repeated uint32 size = 2;
+  string dtype = 3;
+  int32 chunks = 5;
+}
+
+
+enum Status {
+  READY = 0;
+  RUNNING = 1;
+  FINISHED = 2;
+}

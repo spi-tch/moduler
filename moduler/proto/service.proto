@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package module.service;
+
+import "commons.proto";
+
+service Module {
+  rpc execute(Request) returns (Response) {}
+}
+
+message Request {
+
+  enum Type {
+    FORWARD = 0;
+    ABORT = 1;
+    GET_STATUS = 2;
+    GET_MODULES = 3;
+    GET_MODULE = 4;
+    REGISTER_MODULE = 5;
+    DEREGISTER_MODULE = 6;
+    UPDATE_MODULE = 7;
+  }
+
+  Type type = 1;
+  optional string module_id = 2;
+  optional Tensor tensor = 3;
+  map <string, string> parameters = 4;
+}
+
+message Response {
+
+  enum Type {
+    OK = 0;
+    ERROR = 1;
+  }
+
+  Type type = 1;
+  optional string message = 2;
+  optional string module_id = 3;
+  optional Tensor tensor = 4;
+  optional Status status = 5;
+}
