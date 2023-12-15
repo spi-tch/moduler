@@ -9,11 +9,6 @@ You can install using either pip or conda
 pip install moduler
 ```
 
-### Install using conda
-```shell
-conda install moduler
-```
-
 ## Usage
 
 Example with Pytorch
