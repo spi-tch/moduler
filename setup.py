@@ -18,7 +18,7 @@ with codecs.open(os.path.join(this_folder, "moduler/__init__.py"), encoding="utf
 
 
 setup(
-    name="modular",
+    name="moduler",
     version=version_string,
     description="",
     long_description="Use the adapter framework to run any large model.",
